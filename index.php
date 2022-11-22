@@ -11,10 +11,10 @@ $db = new Database($config['database']);
 
 $id = $_GET['id'];
 
-$query = "select * from posts where id=:id";
+$query = "select * from notes where id=:id";
 
 
-$posts = $db->query($query, ['id' => $id])->fetchAll();
+$posts = $db->query($query, ['id' => $id])->fetch();
 
 // Connect to MySQL database.
 
