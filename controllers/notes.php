@@ -9,7 +9,7 @@
   $heading = 'My Notes';
 
 
-  $notes = $db->query("select * from posts where user_id =  4")->fetchAll();
+  $notes = $db->query("select * from posts where user_id = 1")->get();
 
 
 
