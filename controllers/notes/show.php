@@ -1,12 +1,11 @@
   <?php
 
-  $config = require('config.php');
+  $config = require base_path('config.php');
 
   // Create an instance of a new DB class.
 
   $db = new Database($config['database']);
 
-  $heading = 'My Note';
   $currentUserId = 4;
 
 
@@ -14,5 +13,7 @@
 
   authorize($note['user_id'] === $currentUserId);
 
-  require 'views/notes/show.view.php';
-  ?>
+  view("notes/show.view.php", [
+    'heading' => 'Note',
+    'note' => $note
+  ]) ?>

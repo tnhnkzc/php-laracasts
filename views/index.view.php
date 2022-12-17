@@ -1,6 +1,6 @@
-    <?php require('partials/header.php'); ?>
-    <?php require('partials/nav.php'); ?>
-    <?php require('partials/banner.php'); ?>
+    <?php view('partials/header.php'); ?>
+    <?php view('partials/nav.php'); ?>
+    <?php view('partials/banner.php'); ?>
 
 
     <main>
@@ -12,4 +12,4 @@
         <!-- /End replace -->
       </div>
     </main>
-    <?php require('partials/footer.php'); ?>
+    <?php view('partials/footer.php'); ?>
